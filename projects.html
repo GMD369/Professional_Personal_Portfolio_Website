@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Ghulam Mohiyu Ud Din</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">GMD<span>.dev</span></a>
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="education.html" class="nav-link">Education</a>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>My Projects</h1>
+    <p>AI SaaS platforms, full-stack web apps, and desktop/console projects I've built.</p>
+    <p class="breadcrumb"><a href="index.html">Home</a> / Projects</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="filter-row reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ai">AI &amp; SaaS</button>
+      <button class="filter-btn" data-filter="web">Web Apps</button>
+      <button class="filter-btn" data-filter="console">Desktop &amp; Console</button>
+    </div>
+
+    <div class="grid-3">
+
+      <div class="card project-card reveal" data-category="ai">
+        <div class="project-thumb"><img src="images/aico.png" alt="AI Knowledge Analyst Copilot"></div>
+        <div class="project-body">
+          <div class="project-tags"><span>Next.js</span><span>FastAPI</span><span>LangGraph</span></div>
+          <h3>AI Knowledge Analyst Copilot</h3>
+          <p>Full-stack RAG platform to chat with uploaded documents via a LangGraph state machine (query rewriting → retrieval → reranking → generation → confidence evaluation → fallback), using Qdrant vector search and Groq LLM (Llama 3.3 70B).</p>
+          <div class="project-links">
+            <a href="#">Live Demo →</a>
+            <a href="https://github.com/GMD369/AI-Support-Builder">Source Code →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card reveal" data-category="ai">
+        <div class="project-thumb"><img src="images/ebot.png" alt="EmbedBot — AI Chatbot SaaS"></div>
+        <div class="project-body">
+          <div class="project-tags"><span>Next.js</span><span>FastAPI</span><span>PGVector</span></div>
+          <h3>EmbedBot — AI Chatbot SaaS</h3>
+          <p>Production-ready SaaS letting users upload documents and deploy an embeddable AI support chatbot on any website, with a RAG pipeline, lead capture, bot customization, and a real-time analytics dashboard.</p>
+          <div class="project-links">
+            <a href="#">Live Demo →</a>
+            <a href="https://github.com/GMD369/ai-knowledge-analyst-copilot">Source Code →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card reveal" data-category="ai">
+        <div class="project-thumb"><img src="images/tailor.png" alt="Resume Tailor"></div>
+        <div class="project-body">
+          <div class="project-tags"><span>Next.js</span><span>Supabase</span><span>n8n</span><span>Gemini AI</span></div>
+          <h3>Resume Tailor</h3>
+          <p>AI-powered platform that analyzes job descriptions and generates ATS-optimized resumes, automating the end-to-end workflow with n8n, Gemini AI, and Supabase Magic Link authentication.</p>
+          <div class="project-links">
+            <a href="#">Live Demo →</a>
+            <a href="https://github.com/GMD369/Nexium_Mohiyuddin_ResumeTailor/tree/main/grand-project">Source Code →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card reveal" data-category="web">
+        <div class="project-thumb"><img src="images/job.png" alt="SkillBridge — Job Portal"></div>
+        <div class="project-body">
+          <div class="project-tags"><span>MERN</span><span>JWT</span><span>Cloudinary</span></div>
+          <h3>SkillBridge — Job Portal</h3>
+          <p>Full-stack job portal with role-based access for employers and job seekers, supporting job posting, applications, resume tracking, JWT auth, and real-time search filtering.</p>
+          <div class="project-links">
+            <a href="#">Live Demo →</a>
+            <a href="https://github.com/GMD369/Job-Web-App">Source Code →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card reveal" data-category="web">
+        <div class="project-thumb"><img src="images/blog.png" alt="Full Stack Blog App"></div>
+        <div class="project-body">
+          <div class="project-tags"><span>Django REST</span><span>React.js</span><span>PostgreSQL</span></div>
+          <h3>Full Stack Blog App</h3>
+          <p>Blog platform with authentication, posts, comments, and search APIs, integrating a React frontend, Cloudinary media hosting, and CI/CD deployment.</p>
+          <div class="project-links">
+            <a href="#">Live Demo →</a>
+            <a href="https://github.com/GMD369/Blog-Web-App">Source Code →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card reveal" data-category="web">
+        <div class="project-thumb"><img src="images/rdbms.png" alt="RDBMS Query Interface"></div>
+        <div class="project-body">
+          <div class="project-tags"><span>Flask</span><span>SQLite</span><span>Jinja2</span></div>
+          <h3>RDBMS Query Interface</h3>
+          <p>Web interface supporting live SQL execution with full CRUD functionality, a user-friendly query panel, error handling, and dynamic output rendering.</p>
+          <div class="project-links">
+            <a href="#">Live Demo →</a>
+            <a href="https://github.com/GMD369/RelationalDB">Source Code →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card reveal" data-category="web">
+        <div class="project-thumb"><img src="images/twitter.png" alt="Twitter UI Clone"></div>
+        <div class="project-body">
+          <div class="project-tags"><span>Tailwind</span><span>JavaScript</span></div>
+          <h3>Twitter UI Clone</h3>
+          <p>Responsive UI clone simulating Twitter's core layout — feed, profile, and navigation bar — with pixel-perfect design and reusable Tailwind CSS components.</p>
+          <div class="project-links">
+            <a href="https://twitter-clone3.netlify.app/">Live Demo →</a>
+            <a href="https://github.com/GMD369/Twiiter-clone">Source Code →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card reveal" data-category="web">
+        <div class="project-thumb"><img src="images/pass.png" alt="Password Manager"></div>
+        <div class="project-body">
+          <div class="project-tags"><span>JavaScript</span><span>CSS</span><span>LocalStorage</span></div>
+          <h3>Password Manager</h3>
+          <p>A secure, client-side password manager for saving, viewing, and organizing login credentials with a clean, responsive interface.</p>
+          <div class="project-links">
+            <a href="#">Live Demo →</a>
+            <a href="#">Source Code →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card reveal" data-category="console">
+        <div class="project-thumb"><img src="images/Heal.png" alt="HealthWave — Hospital Management System"></div>
+        <div class="project-body">
+          <div class="project-tags"><span>C++</span><span>Console App</span></div>
+          <h3>HealthWave — Hospital Management System</h3>
+          <p>CLI-based hospital system with patient management, search, and billing modules, structured menu navigation, and automated bill calculation.</p>
+          <div class="project-links">
+            <a href="#">Live Demo →</a>
+            <a href="https://github.com/GMD369/HMS">Source Code →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card reveal" data-category="console">
+        <div class="project-thumb"><img src="images/Doctor.png" alt="Clinic Management System"></div>
+        <div class="project-body">
+          <div class="project-tags"><span>C#</span><span>Windows Forms</span></div>
+          <h3>Clinic Management System</h3>
+          <p>Hybrid desktop app combining a Windows Forms GUI with console-based backend operations for patient records, appointment scheduling, and reporting.</p>
+          <div class="project-links">
+            <a href="#">Live Demo →</a>
+            <a href="https://github.com/GMD369/CMS">Source Code →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card reveal" data-category="console">
+        <div class="project-thumb"><img src="images/car.png" alt="Car Obstacle Game"></div>
+        <div class="project-body">
+          <div class="project-tags"><span>C++</span><span>Console Game</span></div>
+          <h3>Car Obstacle Game</h3>
+          <p>2D console game with real-time gameplay, scoring, collision detection, progressive difficulty levels, and a replay system.</p>
+          <div class="project-links">
+            <a href="#">Live Demo →</a>
+            <a href="#">Source Code →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">GMD<span>.dev</span></a>
+        <p>Full Stack AI Engineer building scalable web apps and AI-powered SaaS products.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="education.html">Education</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:ghulammohiyudin11@gmail.com">ghulammohiyudin11@gmail.com</a></li>
+          <li><a href="contact.html">Contact Form</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ghulam Mohiyu Ud Din. All rights reserved.</p>
+      <p>Built with HTML &amp; CSS</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
